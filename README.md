@@ -1,5 +1,7 @@
-Core Automated Authentication Workflow
+#**Core Automated Authentication Workflow**
+
 The automation engine bypasses traditional, high-friction interactive login flows (such as entering a username, password, or handling manual session forms). Instead, it establishes direct, stateless machine-to-machine communication with the target system endpoints using a dedicated API token.
+
 
 Step-by-Step Execution Flow
 [ Automation Script ] --- ( Bearer Token + Payload ) ---> [ APSpace API Endpoints ]
