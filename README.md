@@ -7,6 +7,7 @@ Step-by-Step Execution Flow
 [ Automation Script ] --- ( Bearer Token + Payload ) ---> [ APSpace API Endpoints ]
          |                                                           |
          |<------- ( Success Callback / JSON Response ) -------------|
+         
 Token Authorization
 
 The script injects a pre-configured API key into the HTTP request header as a Bearer Token. This single token contains all necessary permissions, instantly verifying identity to the server without needing multi-step credentials.
