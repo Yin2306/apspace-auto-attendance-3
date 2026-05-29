@@ -1,13 +1,11 @@
-#**Core Automated Authentication Workflow**
+**#Core Automated Authentication Workflow**
+The automation engine bypasses traditional, interactive login flows like passwords or manual session forms. Instead, it establishes direct, stateless machine-to-machine communication with the target system endpoints using a dedicated API token.
 
-The automation engine bypasses traditional, high-friction interactive login flows (such as entering a username, password, or handling manual session forms). Instead, it establishes direct, stateless machine-to-machine communication with the target system endpoints using a dedicated API token.
-
-
-Step-by-Step Execution Flow
-[ Automation Script ] --- ( Bearer Token + Payload ) ---> [ APSpace API Endpoints ]
-         |                                                           |
-         |<------- ( Success Callback / JSON Response ) -------------|
-         
+🔄 Step-by-Step Execution Flow
+Code snippet
+graph LR
+    A[Automation Script] -- "Bearer Token + Payload" --> B[APSpace API Endpoints]
+    B -- "Success Callback / JSON" --> A
 Token Authorization
 
 The script injects a pre-configured API key into the HTTP request header as a Bearer Token. This single token contains all necessary permissions, instantly verifying identity to the server without needing multi-step credentials.
